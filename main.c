@@ -1,47 +1,45 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
+//prototypes
+void evaluateScore();
+float score;
+
+
 int main()
 {
-
-    int A, B, C, D, F;
-    A = 90;
-    B = 80;
-    C = 70;
-    D = 60;
-    F = 0;
-
-    int score;
-
     printf("Enter your score: ");
-    scanf("%d", &score);
 
-    if(score >= A)
+    scanf("%f", &score);
+    evaluateScore();
+
+
+
+
+    return 0;
+}
+
+void evaluateScore()
+{
+    if(score >= 90)
     {
         printf("A\n");
     }
-    else
-    {
-        if(score < A && score >= B)
+        else if(score <= 90 && score >= 80)
         {
             printf("B\n");
         }
-        else
-            if(score < B && score >= C)
+        else if(score <= 80 && score >= 70)
         {
             printf("C\n");
         }
-        else
-            if(score < C && score >=D)
+        else if(score <= 70 && score >= 60)
         {
             printf("D\n");
         }
-        else
-            if(score < D)
+        else if(score <= 60)
         {
             printf("F\n");
         }
-    }
-
-    return 0;
 }
