@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1539968694 source:c:\users\user\desktop\hw3_1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"evaluateScore.h"
+
+1539968733 c:\users\user\desktop\hw3_1\evaluatescore.h
+
